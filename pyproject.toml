@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subagent-budget-team"
+version = "0.1.0"
+description = "Team/CI budget control for subagent token spend: shared budget pools, per-agent quotas, overspend checks, and a kill switch."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "hao li", email = "haoli5933@gmail.com" }]
+keywords = ["subagent", "budget", "token", "cost-control", "ci", "agents"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/subagent-budget-team"
+Issues = "https://github.com/hahahahahahahahah6/subagent-budget-team/issues"
+
+[project.scripts]
+subagent-budget-team = "subagent_budget_team.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
